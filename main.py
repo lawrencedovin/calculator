@@ -15,10 +15,10 @@ print(logo)
 
 def calculator():
     should_continue = True
-    number1 = int(input("What's the first number?: "))
+    number1 = float(input("What's the first number?: "))
 
     while should_continue:
-        number2 = int(input("What's the next number?: "))
+        number2 = float(input("What's the next number?: "))
         operation = input("What operation would you want? + - * /: ")
         answer = calculate(number1, number2, operation)
         print(f"{number1} {operation} {number2} = {answer}")
